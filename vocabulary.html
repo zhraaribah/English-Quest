@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vocabulary Forest | English Quest</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            🌍 English<span>Quest</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quest.html">Quest Map</a>
+        </nav>
+
+        <div class="xp-display">
+            ⭐ <span id="xp">0</span> XP
+        </div>
+
+    </header>
+
+
+    <main class="quiz-page">
+
+        <div class="quiz-container">
+
+            <div class="quiz-top">
+
+                <span>🌳 LEVEL 1</span>
+
+                <h1>Vocabulary Forest</h1>
+
+                <p>
+                    Test your English vocabulary!
+                </p>
+
+            </div>
+
+
+            <div class="progress-info">
+                <span id="question-number">Question 1 / 5</span>
+                <span id="score">Score: 0</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+
+            <div class="question-card">
+
+                <div class="question-icon">
+                    🌳
+                </div>
+
+                <h2 id="question">
+                    Loading question...
+                </h2>
+
+                <div id="answers" class="answers"></div>
+
+                <p id="feedback"></p>
+
+            </div>
+
+
+            <button id="next-button" class="next-button" onclick="nextQuestion()" style="display:none;">
+                Next Question →
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <h3>🌍 EnglishQuest</h3>
+
+        <p>
+            Learn English. Complete Missions. Become a Master!
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>English Detective | English Quest</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            🌍 English<span>Quest</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quest.html">Quest Map</a>
+            <a href="achievements.html">Achievements 🏆</a>
+        </nav>
+
+        <div class="xp-display">
+            ⭐ <span id="detective-xp">0</span> XP
+        </div>
+
+    </header>
+
+
+    <main class="quiz-page">
+
+        <div class="quiz-container">
+
+            <div class="quiz-top">
+
+                <span>🕵️ LEVEL 4</span>
+
+                <h1>English Detective</h1>
+
+                <p>
+                    Find the grammar mistake!
+                </p>
+
+            </div>
+
+
+            <div class="progress-info">
+
+                <span id="detective-question-number">
+                    Case 1 / 5
+                </span>
+
+                <span id="detective-score">
+                    Score: 0
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div id="detective-progress"></div>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div class="question-icon">
+                    🕵️
+                </div>
+
+                <h2 id="detective-question">
+                    Loading case...
+                </h2>
+
+                <p class="detective-hint">
+                    Which word is incorrect?
+                </p>
+
+                <div
+                    id="detective-answers"
+                    class="answers"
+                ></div>
+
+                <p id="detective-feedback"></p>
+
+            </div>
+
+
+            <button
+                id="detective-next-button"
+                class="next-button"
+                onclick="nextDetectiveQuestion()"
+                style="display:none;"
+            >
+                Next Case →
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <h3>🌍 EnglishQuest</h3>
+
+        <p>
+            Learn English. Complete Missions. Become a Master!
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

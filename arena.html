@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>English Arena | English Quest</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            🌍 English<span>Quest</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quest.html">Quest Map</a>
+            <a href="achievements.html">Achievements 🏆</a>
+        </nav>
+
+        <div class="xp-display">
+            ⭐ <span id="arena-xp">0</span> XP
+        </div>
+
+    </header>
+
+
+    <main class="quiz-page">
+
+        <div class="quiz-container">
+
+            <div class="quiz-top">
+
+                <span>👑 FINAL LEVEL</span>
+
+                <h1>English Arena</h1>
+
+                <p>
+                    Defeat the Final Boss and become an English Master!
+                </p>
+
+            </div>
+
+
+            <div class="progress-info">
+
+                <span id="arena-question-number">
+                    Battle 1 / 5
+                </span>
+
+                <span id="arena-score">
+                    Score: 0
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div id="arena-progress"></div>
+
+            </div>
+
+
+            <div class="question-card arena-card">
+
+                <div class="question-icon">
+                    👑
+                </div>
+
+                <h2 id="arena-question">
+                    Loading battle...
+                </h2>
+
+                <div id="arena-answers" class="answers"></div>
+
+                <p id="arena-feedback"></p>
+
+            </div>
+
+
+            <button
+                id="arena-next-button"
+                class="next-button"
+                onclick="nextArenaQuestion()"
+                style="display:none;"
+            >
+                Next Battle →
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <h3>🌍 EnglishQuest</h3>
+
+        <p>
+            Learn English. Complete Missions. Become a Master!
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

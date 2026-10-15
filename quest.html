@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>English Quest | Quest Map</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            🌍 English<span>Quest</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quest.html">Quest Map</a>
+            <a href="achievements.html">Achievements 🏆</a>
+        </nav>
+
+        <div class="xp-display">
+            ⭐<span id="map-xp">0</span> XP
+        </div>
+
+    </header>
+
+
+    <!-- QUEST MAP -->
+
+    <main class="quest-page">
+
+        <section class="quest-header">
+
+            <span>🗺️ YOUR ADVENTURE</span>
+
+            <h1>
+                English <span>Quest Map</span>
+            </h1>
+
+            <p>
+                Complete each mission and become an English Master!
+            </p>
+
+        </section>
+
+
+        <!-- QUEST CARDS -->
+
+
+        <div class="quest-progress">
+
+    <div class="progress-text">
+        <span>Your Adventure Progress</span>
+        <strong>
+            <span id="quest-xp">0</span> / 550 XP
+        </strong>
+    </div>
+
+    <div class="quest-xp-bar">
+        <div id="quest-xp-fill"></div>
+    </div>
+
+</div>
+
+
+        <section class="quest-map">
+
+
+            <!-- QUEST 1 -->
+
+            <div class="quest-card unlocked">
+
+                <div class="quest-number">
+                    01
+                </div>
+
+                <div class="quest-icon">
+                    🌳
+                </div>
+
+                <div class="quest-info">
+
+                    <span class="quest-level">
+                        LEVEL 1
+                    </span>
+
+                    <h2>
+                        Vocabulary Forest
+                    </h2>
+
+                    <p>
+                        Explore new words and expand your English vocabulary.
+                    </p>
+
+                    <span class="quest-reward">⭐ +20 XP</span>
+
+                    <button onclick="window.location.href='vocabulary.html'">
+                         Start Mission →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUEST 2 -->
+
+            <div class="quest-card unlocked">
+
+                <div class="quest-number">
+                    02
+                </div>
+
+                <div class="quest-icon">
+                    🏰
+                </div>
+
+                <div class="quest-info">
+
+                    <span class="quest-level">
+                        LEVEL 2
+                    </span>
+
+                    <h2>
+                        Grammar Castle
+                    </h2>
+
+                    <p>
+                        Master English grammar through exciting challenges.
+                    </p>
+
+                    <span class="quest-reward">⭐ +20 XP</span>
+
+                    <button id="grammar-button" onclick="window.location.href='grammar.html'">
+                        Start Mission →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUEST 3 -->
+
+            <div class="quest-card unlocked">
+
+                <div class="quest-number">
+                    03
+                </div>
+
+                <div class="quest-icon">
+                    🎧
+                </div>
+
+                <div class="quest-info">
+
+                    <span class="quest-level">
+                        LEVEL 3
+                    </span>
+
+                    <h2>
+                        Listening Lake
+                    </h2>
+
+                    <p>
+                        Listen carefully and complete the listening challenge.
+                    </p>
+
+                    <span class="quest-reward">⭐ +20 XP</span>
+
+                    <button id="listening-button" onclick="window.location.href='listening.html'">
+                        Start Mission →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUEST 4 -->
+
+            <div class="quest-card unlocked">
+
+                <div class="quest-number">
+                    04
+                </div>
+
+                <div class="quest-icon">
+                    🕵️
+                </div>
+
+                <div class="quest-info">
+
+                    <span class="quest-level">
+                        LEVEL 4
+                    </span>
+
+                    <h2>
+                        English Detective
+                    </h2>
+
+                    <p>
+                        Find grammar mistakes and solve English mysteries.
+                    </p>
+
+                    <span class="quest-reward">⭐ +20 XP</span>
+
+                    <button id="detective-button" onclick="window.location.href='detective.html'">
+                        Start Mission →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FINAL QUEST -->
+
+            <div class="quest-card unlocked">
+
+                <div class="quest-number">
+                    👑
+                </div>
+
+                <div class="quest-icon">
+                    ⚔️
+                </div>
+
+                <div class="quest-info">
+
+                    <span class="quest-level">
+                        FINAL BOSS
+                    </span>
+
+                    <h2>
+                        English Arena
+                    </h2>
+
+                    <p>
+                        Complete the final challenge and become an English Master!
+                    </p>
+
+                    <span class="quest-reward">👑 +30 XP</span>
+
+                    <button id="arena-button" onclick="window.location.href='arena.html'">
+                        Enter Final Boss 👑
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>🌍 EnglishQuest</h3>
+
+        <p>
+            Learn English. Complete Missions. Become a Master!
+        </p>
+
+        <small>
+            Made for English learners 💙
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grammar Castle | English Quest</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            🌍 English<span>Quest</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quest.html">Quest Map</a>
+            <a href="achievements.html">Achievements 🏆</a>
+        </nav>
+
+        <div class="xp-display">
+            ⭐ <span id="grammar-xp">0</span> XP
+        </div>
+
+    </header>
+
+
+    <main class="quiz-page">
+
+        <div class="quiz-container">
+
+            <div class="quiz-top">
+
+                <span>🏰 LEVEL 2</span>
+
+                <h1>Grammar Castle</h1>
+
+                <p>
+                    Master English grammar!
+                </p>
+
+            </div>
+
+
+            <div class="progress-info">
+                <span id="grammar-question-number">Question 1 / 5</span>
+                <span id="grammar-score">Score: 0</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="grammar-progress"></div>
+            </div>
+
+
+            <div class="question-card">
+
+                <div class="question-icon">
+                    🏰
+                </div>
+
+                <h2 id="grammar-question">
+                    Loading question...
+                </h2>
+
+                <div id="grammar-answers" class="answers"></div>
+
+                <p id="grammar-feedback"></p>
+
+            </div>
+
+
+            <button
+                id="grammar-next-button"
+                class="next-button"
+                onclick="nextGrammarQuestion()"
+                style="display:none;"
+            >
+                Next Question →
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <h3>🌍 EnglishQuest</h3>
+
+        <p>
+            Learn English. Complete Missions. Become a Master!
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
