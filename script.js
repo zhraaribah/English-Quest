@@ -595,56 +595,257 @@ if (document.getElementById("question")) {
 
 
 const grammarQuestions = [
-    { question: "She ___ to school every day.", answers: ["go", "goes", "going", "gone"], correct: "goes" },
-    { question: "They ___ playing football now.", answers: ["is", "am", "are", "be"], correct: "are" },
-    { question: "I ___ a student.", answers: ["is", "are", "am", "be"], correct: "am" },
-    { question: "He ___ breakfast every morning.", answers: ["eat", "eats", "eating", "eaten"], correct: "eats" },
-    { question: "We ___ English yesterday.", answers: ["study", "studies", "studied", "studying"], correct: "studied" },
-    { question: "My mother ___ cooking now.", answers: ["is", "are", "am", "be"], correct: "is" },
-    { question: "The boys ___ in the park every Sunday.", answers: ["plays", "play", "playing", "played"], correct: "play" },
-    { question: "Rina ___ a new bag last week.", answers: ["buy", "buys", "bought", "buying"], correct: "bought" },
-    { question: "I ___ watching TV when you called.", answers: ["was", "were", "am", "is"], correct: "was" },
-    { question: "They ___ at home yesterday.", answers: ["was", "were", "is", "be"], correct: "were" },
-    { question: "He ___ not like coffee.", answers: ["do", "does", "is", "are"], correct: "does" },
-    { question: "___ you speak English?", answers: ["Does", "Are", "Do", "Is"], correct: "Do" },
-    { question: "She has ___ apple.", answers: ["a", "an", "the", "some"], correct: "an" },
-    { question: "I saw ___ cat in the garden.", answers: ["a", "an", "are", "am"], correct: "a" },
-    { question: "There ___ five books on the table.", answers: ["is", "am", "are", "was"], correct: "are" },
-    { question: "There ___ a bird in the tree.", answers: ["are", "were", "is", "be"], correct: "is" },
-    { question: "My friends ___ very kind.", answers: ["is", "am", "are", "was"], correct: "are" },
-    { question: "The sun ___ in the east.", answers: ["rise", "rises", "rising", "rose"], correct: "rises" },
-    { question: "Water ___ at 100 degrees Celsius.", answers: ["boil", "boils", "boiling", "boiled"], correct: "boils" },
-    { question: "We ___ to the beach last Sunday.", answers: ["go", "goes", "went", "going"], correct: "went" },
-    { question: "She ___ her homework every evening.", answers: ["do", "does", "did", "doing"], correct: "does" },
-    { question: "I ___ my room yesterday.", answers: ["clean", "cleans", "cleaned", "cleaning"], correct: "cleaned" },
-    { question: "Look! The baby ___.", answers: ["sleep", "sleeps", "is sleeping", "slept"], correct: "is sleeping" },
-    { question: "Listen! Someone ___ at the door.", answers: ["knock", "knocks", "is knocking", "knocked"], correct: "is knocking" },
-    { question: "My father ___ a car.", answers: ["have", "has", "having", "had"], correct: "has" },
-    { question: "We ___ two cats at home.", answers: ["has", "have", "having", "is"], correct: "have" },
-    { question: "This book is ___ than that one.", answers: ["interesting", "more interesting", "most interesting", "interest"], correct: "more interesting" },
-    { question: "An elephant is ___ than a goat.", answers: ["big", "bigger", "biggest", "more big"], correct: "bigger" },
-    { question: "Mount Everest is the ___ mountain in the world.", answers: ["high", "higher", "highest", "more high"], correct: "highest" },
-    { question: "You ___ wear a helmet when riding a motorcycle.", answers: ["should", "should to", "are", "does"], correct: "should" },
-    { question: "I can ___ very well.", answers: ["swims", "swimming", "swim", "swam"], correct: "swim" },
-    { question: "She ___ swim when she was five.", answers: ["can", "could", "is", "does"], correct: "could" },
-    { question: "They will ___ us tomorrow.", answers: ["visited", "visits", "visit", "visiting"], correct: "visit" },
-    { question: "I am going ___ study tonight.", answers: ["at", "to", "for", "by"], correct: "to" },
-    { question: "The cat is ___ the table.", answers: ["under", "quickly", "beautiful", "run"], correct: "under" },
-    { question: "The meeting starts ___ seven o'clock.", answers: ["in", "on", "at", "by"], correct: "at" },
-    { question: "My birthday is ___ July.", answers: ["at", "in", "on", "by"], correct: "in" },
-    { question: "We have a flag ceremony ___ Monday.", answers: ["in", "at", "on", "by"], correct: "on" },
-    { question: "She is interested ___ music.", answers: ["on", "at", "in", "for"], correct: "in" },
-    { question: "This is ___ book.", answers: ["my", "me", "I", "mine"], correct: "my" },
-    { question: "That pencil is ___.", answers: ["my", "me", "mine", "I"], correct: "mine" },
-    { question: "Ahmad and I are friends. ___ study together.", answers: ["They", "We", "He", "She"], correct: "We" },
-    { question: "Mira is my sister. ___ is kind.", answers: ["He", "They", "She", "We"], correct: "She" },
-    { question: "The students ___ finished their homework.", answers: ["has", "have", "is", "was"], correct: "have" },
-    { question: "I have lived here ___ 2020.", answers: ["for", "since", "at", "during"], correct: "since" },
-    { question: "She has studied English ___ three years.", answers: ["since", "at", "for", "on"], correct: "for" },
-    { question: "If it rains, we ___ at home.", answers: ["stay", "stayed", "will stay", "staying"], correct: "will stay" },
-    { question: "The letter ___ by my teacher yesterday.", answers: ["write", "wrote", "was written", "writing"], correct: "was written" },
-    { question: "English ___ in many countries.", answers: ["speak", "speaks", "is spoken", "speaking"], correct: "is spoken" },
-    { question: "She asked me where I ___.", answers: ["live", "lived", "living", "lives"], correct: "lived" }
+    { 
+        question: "She ___ to school every day.", 
+      answers: ["go", "goes", "going", "gone"], 
+      correct: "goes" 
+    },
+    { 
+        question: "They ___ playing football now.", 
+      answers: ["is", "am", "are", "be"], 
+      correct: "are" 
+    },
+    { 
+        question: "I ___ a student.", 
+      answers: ["is", "are", "am", "be"], 
+      correct: "am" 
+    },
+    { 
+        question: "He ___ breakfast every morning.", 
+      answers: ["eat", "eats", "eating", "eaten"], 
+      correct: "eats" 
+    },
+    { 
+        question: "We ___ English yesterday.", 
+      answers: ["study", "studies", "studied", "studying"], 
+      correct: "studied" 
+    },
+    { 
+        question: "My mother ___ cooking now.", 
+      answers: ["is", "are", "am", "be"], 
+      correct: "is" 
+    },
+    { 
+        question: "The boys ___ in the park every Sunday.", 
+      answers: ["plays", "play", "playing", "played"], 
+      correct: "play" 
+    },
+    { 
+        question: "Rina ___ a new bag last week.", 
+      answers: ["buy", "buys", "bought", "buying"], 
+      correct: "bought" 
+    },
+    { 
+        question: "I ___ watching TV when you called.", 
+      answers: ["was", "were", "am", "is"], 
+      correct: "was" 
+    },
+    { 
+        question: "They ___ at home yesterday.", 
+      answers: ["was", "were", "is", "be"], 
+      correct: "were" 
+    },
+    { 
+        question: "He ___ not like coffee.", 
+        answers: ["do", "does", "is", "are"], 
+        correct: "does" 
+    },
+    { 
+        question: "___ you speak English?", 
+        answers: ["Does", "Are", "Do", "Is"], 
+        correct: "Do" 
+    },
+    { 
+        question: "She has ___ apple.", 
+        answers: ["a", "an", "the", "some"], 
+        correct: "an" 
+    },
+    { 
+        question: "I saw ___ cat in the garden.", 
+        answers: ["a", "an", "are", "am"], 
+        correct: "a" 
+    },
+    { 
+        question: "There ___ five books on the table.", 
+        answers: ["is", "am", "are", "was"], 
+        correct: "are" 
+    },
+    { 
+        question: "There ___ a bird in the tree.", 
+        answers: ["are", "were", "is", "be"], 
+        correct: "is" 
+    },
+    { 
+        question: "My friends ___ very kind.", 
+        answers: ["is", "am", "are", "was"], 
+        correct: "are" 
+    },
+    { 
+        question: "The sun ___ in the east.", 
+        answers: ["rise", "rises", "rising", "rose"], 
+        correct: "rises" 
+    },
+    { 
+        question: "Water ___ at 100 degrees Celsius.", 
+        answers: ["boil", "boils", "boiling", "boiled"], 
+        correct: "boils" 
+    },
+    { 
+        question: "We ___ to the beach last Sunday.", 
+        answers: ["go", "goes", "went", "going"], 
+        correct: "went" 
+    },
+    { 
+        question: "She ___ her homework every evening.", 
+        answers: ["do", "does", "did", "doing"], 
+        correct: "does" 
+    },
+    { 
+        question: "I ___ my room yesterday.", 
+        answers: ["clean", "cleans", "cleaned", "cleaning"], 
+        correct: "cleaned" 
+    },
+    { 
+        question: "Look! The baby ___.", 
+        answers: ["sleep", "sleeps", "is sleeping", "slept"], 
+        correct: "is sleeping" 
+    },
+    { 
+        question: "Listen! Someone ___ at the door.", 
+        answers: ["knock", "knocks", "is knocking", "knocked"], 
+        correct: "is knocking" 
+    },
+    { 
+        question: "My father ___ a car.", 
+        answers: ["have", "has", "having", "had"], 
+        correct: "has" 
+    },
+    { 
+        question: "We ___ two cats at home.", 
+        answers: ["has", "have", "having", "is"], 
+        correct: "have" 
+    },
+    { 
+        question: "This book is ___ than that one.", 
+        answers: ["interesting", "more interesting", "most interesting", "interest"], 
+        correct: "more interesting" 
+    },
+    { 
+        question: "An elephant is ___ than a goat.", 
+        answers: ["big", "bigger", "biggest", "more big"], 
+        correct: "bigger" 
+    },
+    { 
+        question: "Mount Everest is the ___ mountain in the world.", 
+        answers: ["high", "higher", "highest", "more high"], 
+        correct: "highest" 
+    },
+    { 
+        question: "You ___ wear a helmet when riding a motorcycle.", 
+        answers: ["should", "should to", "are", "does"], 
+        correct: "should" 
+    },
+    { 
+        question: "I can ___ very well.", 
+        answers: ["swims", "swimming", "swim", "swam"], 
+        correct: "swim" 
+    },
+    { 
+        question: "She ___ swim when she was five.", 
+        answers: ["can", "could", "is", "does"], 
+        correct: "could" 
+    },
+    { 
+        question: "They will ___ us tomorrow.", 
+        answers: ["visited", "visits", "visit", "visiting"], 
+        correct: "visit" 
+    },
+    { 
+        question: "I am going ___ study tonight.", 
+        answers: ["at", "to", "for", "by"], 
+        correct: "to" 
+    },
+    { 
+        question: "The cat is ___ the table.", 
+        answers: ["under", "quickly", "beautiful", "run"], 
+        correct: "under" 
+    },
+    { 
+        question: "The meeting starts ___ seven o'clock.", 
+        answers: ["in", "on", "at", "by"], 
+        correct: "at" 
+    },
+    { 
+        question: "My birthday is ___ July.",
+        answers: ["at", "in", "on", "by"], 
+        correct: "in" 
+    },
+    { 
+        question: "We have a flag ceremony ___ Monday.", 
+        answers: ["in", "at", "on", "by"], 
+        correct: "on" 
+    },
+    { 
+        question: "She is interested ___ music.", 
+        answers: ["on", "at", "in", "for"], 
+        correct: "in" 
+    },
+    { 
+        question: "This is ___ book.", 
+        answers: ["my", "me", "I", "mine"], 
+        correct: "my" 
+    },
+    { 
+        question: "That pencil is ___.", 
+        answers: ["my", "me", "mine", "I"], 
+        correct: "mine" 
+    },
+    { 
+        question: "Ahmad and I are friends. ___ study together.", 
+        answers: ["They", "We", "He", "She"], 
+        correct: "We" 
+    },
+    { 
+        question: "Mira is my sister. ___ is kind.", 
+        answers: ["He", "They", "She", "We"], 
+        correct: "She" 
+    },
+    { 
+        question: "The students ___ finished their homework.", 
+        answers: ["has", "have", "is", "was"], 
+        correct: "have" 
+    },
+    { 
+        question: "I have lived here ___ 2020.", 
+        answers: ["for", "since", "at", "during"],
+        correct: "since" 
+    },
+    { 
+        question: "She has studied English ___ three years.", 
+        answers: ["since", "at", "for", "on"], 
+        correct: "for" 
+    },
+    { 
+        question: "If it rains, we ___ at home.", 
+        answers: ["stay", "stayed", "will stay", "staying"], 
+        correct: "will stay" 
+    },
+    { 
+        question: "The letter ___ by my teacher yesterday.", 
+        answers: ["write", "wrote", "was written", "writing"],
+        correct: "was written" 
+    },
+    { 
+        question: "English ___ in many countries.", 
+        answers: ["speak", "speaks", "is spoken", "speaking"], 
+        correct: "is spoken" 
+    },
+    { 
+        question: "She asked me where I ___.", 
+        answers: ["live", "lived", "living", "lives"], 
+        correct: "lived" 
+    }
+
 ];
 
 
@@ -723,7 +924,7 @@ function loadGrammarQuestion() {
 
 function checkGrammarAnswer(button, answer) {
 
-    const question = grammarQuestions[currentGrammarQuestion];
+    const question = grammarQuizQuestions[currentGrammarQuestion];
 
     const buttons =
         document.querySelectorAll("#grammar-answers .answer-button");
@@ -1120,7 +1321,7 @@ function loadListeningQuestion() {
 
     document.getElementById("listening-progress").style.width =
         ((currentListeningQuestion + 1) /
-        listeningQuestions.length) * 100 + "%";
+        listeningQuizQuestions.length) * 100 + "%";
 
 
     const answers =
@@ -1129,21 +1330,26 @@ function loadListeningQuestion() {
     answers.innerHTML = "";
 
 
-    question.answers.forEach(answer => {
+    
+const shuffledAnswers = [...question.answers];
 
-        const button = document.createElement("button");
+for (let i = shuffledAnswers.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledAnswers[i], shuffledAnswers[j]] =
+        [shuffledAnswers[j], shuffledAnswers[i]];
+}
 
-        button.textContent = answer;
+shuffledAnswers.forEach(answer => {
+    const button = document.createElement("button");
+    button.textContent = answer;
+    button.className = "answer-button";
 
-        button.className = "answer-button";
+    button.onclick = function () {
+        checkListeningAnswer(button, answer);
+    };
 
-        button.onclick = function() {
-            checkListeningAnswer(button, answer);
-        };
-
-        answers.appendChild(button);
-
-    });
+    answers.appendChild(button);
+});
 
 
     document.getElementById("listening-feedback").textContent = "";
@@ -1217,48 +1423,64 @@ function checkListeningAnswer(button, answer) {
     document.getElementById("listening-xp").textContent =
         xp;
 
-    document.getElementById("listening-next-button").style.display =
-        "block";
+    const nextButton = document.getElementById("listening-next-button");
+
+nextButton.style.display = "block";
+nextButton.disabled = false;
+nextButton.style.position = "relative";
+nextButton.style.zIndex = "10";
 }
 
 
 function nextListeningQuestion() {
-
-    currentListeningQuestion++;
-
-
-    if (
-        currentListeningQuestion <
-        listeningQuestions.length
-    ) {
-
+    if (currentListeningQuestion < listeningQuizQuestions.length - 1) {
+        currentListeningQuestion++;
         loadListeningQuestion();
-
     } else {
-
         finishListeningQuiz();
-
     }
 }
 
 
 function finishListeningQuiz() {
+    const questionTitle = document.getElementById("listening-question");
+    const playButton = document.getElementById("listening-play-button");
+    const hint = document.getElementById("listening-hint");
+    const answers = document.getElementById("listening-answers");
+    const feedback = document.getElementById("listening-feedback");
+    const nextButton = document.getElementById("listening-next-button");
 
-    document.getElementById("listening-answers").innerHTML =
-        "<h3>You earned " +
-        listeningScore +
-        " XP!</h3>";
+    if (questionTitle) {
+        questionTitle.textContent = "🏆 Listening Lake Completed!";
+    }
 
-    document.getElementById("listening-feedback").textContent =
-        "🎧 Amazing! You completed Listening Lake!";
+    if (playButton) {
+        playButton.style.display = "none";
+    }
 
-    document.getElementById("listening-next-button").textContent =
-        "Back to Quest Map →";
+    if (hint) {
+        hint.style.display = "none";
+    }
 
-    document.getElementById("listening-next-button").onclick =
-        function() {
+    if (answers) {
+        answers.innerHTML = `
+            <h3>You earned ${listeningScore} XP!</h3>
+            <p>You completed all 5 listening questions!</p>
+        `;
+    }
+
+    if (feedback) {
+        feedback.textContent = "⭐ Great job! Keep practicing your English!";
+    }
+
+    if (nextButton) {
+        nextButton.textContent = "Back to Quest Map 🗺️";
+        nextButton.style.display = "block";
+        nextButton.disabled = false;
+        nextButton.onclick = function () {
             window.location.href = "quest.html";
         };
+    }
 }
 
 
@@ -1617,58 +1839,61 @@ function startDetectiveQuiz() {
 
 
 function loadDetectiveQuestion() {
-
-    const question =
-        detectiveQuizQuestions[currentDetectiveQuestion];
-
+    const question = detectiveQuizQuestions[currentDetectiveQuestion];
 
     document.getElementById("detective-question").textContent =
         question.question;
 
-
     document.getElementById("detective-question-number").textContent =
-        "Case " +
-        (currentDetectiveQuestion + 1) +
-        " / " +
-        detectiveQuizQuestions.length;
-
+        "Case " + (currentDetectiveQuestion + 1) +
+        " / " + detectiveQuizQuestions.length;
 
     document.getElementById("detective-score").textContent =
         "Score: " + detectiveScore;
 
-
     document.getElementById("detective-progress").style.width =
         ((currentDetectiveQuestion + 1) /
-        detectiveQuestions.length) * 100 + "%";
+        detectiveQuizQuestions.length) * 100 + "%";
+
+    
+const hint = document.querySelector(".detective-hint");
+
+if (hint) {
+    const q = question.question.toLowerCase();
+
+    if (
+        q.includes("incorrect") ||
+        q.includes("wrong") ||
+        q.includes("error") ||
+        q.includes("they is playing football") ||
+        q.includes("he have a new bicycle") ||
+        q.includes("i am go to the library") ||
+        q.includes("we was very happy") ||
+        q.includes("she go to school")
+    ) {
+        hint.textContent = "Find the incorrect word!";
+    } else if (q.includes("which sentence is correct")) {
+        hint.textContent = "Choose the correct sentence!";
+    } else {
+        hint.textContent = "Choose the correct answer!";
+    }
+}
 
 
-    const answers =
-        document.getElementById("detective-answers");
-
+    const answers = document.getElementById("detective-answers");
     answers.innerHTML = "";
 
-
     question.answers.forEach(answer => {
-
         const button = document.createElement("button");
-
         button.textContent = answer;
-
         button.className = "answer-button";
 
-        button.onclick = function() {
-
-            checkDetectiveAnswer(
-                button,
-                answer
-            );
-
+        button.onclick = function () {
+            checkDetectiveAnswer(button, answer);
         };
 
         answers.appendChild(button);
-
     });
-
 
     document.getElementById("detective-feedback").textContent = "";
 
@@ -2075,10 +2300,36 @@ function startArenaQuiz() {
     loadArenaQuestion();
 }
 
-function loadArenaQuestion() {
 
-    const question =
-        arenaQuizQuestions[currentArenaQuestion];
+function loadArenaQuestion() {
+    if (
+        !Array.isArray(arenaQuizQuestions) ||
+        currentArenaQuestion < 0 ||
+        currentArenaQuestion >= arenaQuizQuestions.length
+    ) {
+        console.error("Soal Arena tidak tersedia atau indeks soal tidak valid.");
+        return;
+    }
+
+    
+if (
+    !Array.isArray(arenaQuizQuestions) ||
+    currentArenaQuestion < 0 ||
+    currentArenaQuestion >= arenaQuizQuestions.length
+) {
+    console.error("Indeks soal Arena tidak valid:", {
+        currentArenaQuestion,
+        totalSoal: arenaQuizQuestions?.length
+    });
+    return;
+}
+
+const question = arenaQuizQuestions[currentArenaQuestion];
+
+if (!question || !question.question || !Array.isArray(question.answers)) {
+    console.error("Format data soal Arena salah:", question);
+    return;
+}
 
 
     document.getElementById("arena-question").textContent =
@@ -2097,8 +2348,8 @@ function loadArenaQuestion() {
 
 
     document.getElementById("arena-progress").style.width =
-        ((currentArenaQuestion + 1) /
-        arenaQuestions.length) * 100 + "%";
+    ((currentArenaQuestion + 1) /
+    arenaQuizQuestions.length * 100) + "%";
 
 
     const answers =
@@ -2193,21 +2444,15 @@ function checkArenaAnswer(button, answer) {
 
 
 function nextArenaQuestion() {
-
     currentArenaQuestion++;
-
 
     if (
         currentArenaQuestion <
-        arenaQuestions.length
+        arenaQuizQuestions.length
     ) {
-
         loadArenaQuestion();
-
     } else {
-
         finishArena();
-
     }
 }
 
